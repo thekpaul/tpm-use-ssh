@@ -31,7 +31,7 @@ clone_plugin() {
 	local plugin="$1"
 	local branch="$2"
 	clone "$plugin" "$branch" ||
-		clone "https://git::@github.com/$plugin" "$branch"
+		clone "git@github.com:$plugin" "$branch"
 }
 
 # clone plugin and produce output
